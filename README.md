@@ -1,4 +1,4 @@
-# resnet-detector
+# efficientnet-detector
 
 Generic source code structure for building a detection model.
 

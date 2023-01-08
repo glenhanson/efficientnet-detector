@@ -9,3 +9,5 @@ pylint
 pytest
 pytest-cov
 pandas
+pyfarmhash
+imageio
