@@ -1,2 +1,3 @@
 [console_scripts]
 efficientnet = efficientnet.__main__:main
+

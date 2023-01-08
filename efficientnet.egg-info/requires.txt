@@ -2,12 +2,12 @@ fire
 
 [dev]
 black
+imageio
 isort
 jupyter
+pandas
 pydocstyle
+pyfarmhash
 pylint
 pytest
 pytest-cov
-pandas
-pyfarmhash
-imageio
