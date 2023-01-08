@@ -3,6 +3,7 @@ from __future__ import annotations
 import os
 from dataclasses import dataclass
 from pathlib import Path
+import torchvision.transforms as T
 
 import torch
 
@@ -13,11 +14,13 @@ class Config:
 
     data_directory: Path = Path(os.getcwd()).parent / "data"
     dataset_directory: Path = data_directory / "dataset"
-    image_directory: Path = Path("/home/ubuntu/data/output")
+    image_directory: Path = Path("/home/ubuntu/data/images/output")
     annotation_directory: Path = dataset_directory / "annotations"
     models_directory: Path = data_directory / "models"
 
     device = torch.device(torch.device("cuda" if torch.cuda.is_available() else "cpu"))
+
+    img_transform = T.ToTensor()
 
     # Model
     rgb_mean: tuple[float, float, float] = (0.485, 0.456, 0.406)

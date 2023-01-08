@@ -3,6 +3,7 @@ fire
 [dev]
 black
 imageio
+imageio-ffmpeg
 isort
 jupyter
 pandas
@@ -11,3 +12,5 @@ pyfarmhash
 pylint
 pytest
 pytest-cov
+pytorch-lightning
+torchmetrics
