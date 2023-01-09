@@ -71,3 +71,11 @@ def train_model(checkpoint_path: Optional[str] = None) -> None:
     )
     lightning = EfficientNetTrainer()
     trainer.fit(lightning)
+
+
+def save_checkpoint(checkpoint_path: str) -> None:
+    """Save checkpoint."""
+    lightning = EfficientNetTrainer()
+    lightning = lightning.load_from_checkpoint(checkpoint_path)
+    torch.save(lightning.model.state_dict(), Config.trained_model_path)
+    print(f"Model checkpoint saved at {Config.trained_model_path}")

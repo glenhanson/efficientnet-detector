@@ -12,11 +12,13 @@ import torchvision.transforms as T
 class Config:
     """Package configurations."""
 
-    data_directory: Path = Path("/home/ubuntu/code/efficientnet-detector/data")
+    data_directory: Path = Path("/Users/glen/code/efficientnet/data")
     dataset_directory: Path = data_directory / "dataset"
     image_directory: Path = Path("/home/ubuntu/data/output")
     annotation_directory: Path = dataset_directory / "annotations"
     models_directory: Path = data_directory / "models"
+    trained_model_path: Path = models_directory / "model.pth"
+    onnx_model_path: Path = models_directory / "model.onnx"
 
     device = torch.device(torch.device("cuda" if torch.cuda.is_available() else "cpu"))
 

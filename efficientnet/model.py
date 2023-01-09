@@ -42,3 +42,20 @@ class EfficientNet(torch.nn.Module):
         """Load model weights."""
         weights = torch.load(model_path)
         self.load_state_dict(weights)
+
+
+def export_model(input_shape: tuple[int, int, int] = (3, 1024, 1024)) -> None:
+    """Export the model."""
+    x = torch.randn(*input_shape)
+    model = EfficientNet().eval()
+    model.load(Config.trained_model_path)
+    print(f"Input shape: {input_shape}")
+    torch.onnx.export(
+        model,
+        x[None],
+        Config.onnx_model_path,
+        input_names=["input"],
+        output_names=["scores"],
+        opset_version=11,
+    )
+    print(f"model saved at {Config.onnx_model_path}")
