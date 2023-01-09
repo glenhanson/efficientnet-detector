@@ -45,7 +45,7 @@ class EfficientNetTrainer(pl.LightningModule):
         images = batch["image"].to(Config.device)
         targets = batch["label"].to(Config.device)
         result = self.model(images)
-        loss = torch.nn.functional.binary_cross_entropy(result["score"].squeeze(), targets)
+        loss = torch.nn.functional.binary_cross_entropy(result["score"], targets)
         self.log("loss", loss, on_step=True, logger=True)
         return loss
 
@@ -53,7 +53,7 @@ class EfficientNetTrainer(pl.LightningModule):
         images = batch["image"].to(Config.device)
         targets = batch["label"].to(Config.device)
         result = self.model(images)
-        f1_score = self.binary_f1(result["score"].squeeze(), targets)
+        f1_score = self.binary_f1(result["score"], targets)
         self.log("f1score", f1_score, prog_bar=True, on_epoch=True)
 
     def configure_optimizers(self) -> torch.optim.Optimizer:

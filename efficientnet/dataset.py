@@ -21,14 +21,15 @@ def get_sample_dicts(holdout: Optional[Holdout] = None) -> list[dict[str, Any]]:
         slug = file.stem
         if holdout and get_holdout(slug) != holdout:
             continue
-
+        label = np.zeros(1, dtype="float32")
+        label[0] = data["label"]
         image_path = data["image_path"]
         img = imageio.imread(image_path)
         samples.append(
             {
                 "image_path": image_path,
                 "image": img,
-                "label": np.array(data["label"]).astype("float32"),
+                "label": label,
             }
         )
     return samples
