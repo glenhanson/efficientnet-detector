@@ -3,9 +3,9 @@ from __future__ import annotations
 import os
 from dataclasses import dataclass
 from pathlib import Path
-import torchvision.transforms as T
 
 import torch
+import torchvision.transforms as T
 
 
 @dataclass
@@ -14,7 +14,7 @@ class Config:
 
     data_directory: Path = Path(os.getcwd()).parent / "data"
     dataset_directory: Path = data_directory / "dataset"
-    image_directory: Path = Path("/home/ubuntu/data/images/output")
+    image_directory: Path = Path("/home/ubuntu/data/output")
     annotation_directory: Path = dataset_directory / "annotations"
     models_directory: Path = data_directory / "models"
 

@@ -1,0 +1,21 @@
+#!/bin/bash
+cp /home/ubuntu/data/output/959_1101869471.png /home/ubuntu/code/efficientnet-detector/data/dataset/images/
+cp /home/ubuntu/data/output/41220_961200800.png /home/ubuntu/code/efficientnet-detector/data/dataset/images/
+cp /home/ubuntu/data/output/17759_280093131.png /home/ubuntu/code/efficientnet-detector/data/dataset/images/
+cp /home/ubuntu/data/output/51498_235064489.png /home/ubuntu/code/efficientnet-detector/data/dataset/images/
+cp /home/ubuntu/data/output/31745_953022973.png /home/ubuntu/code/efficientnet-detector/data/dataset/images/
+cp /home/ubuntu/data/output/38168_865022290.png /home/ubuntu/code/efficientnet-detector/data/dataset/images/
+cp /home/ubuntu/data/output/59312_574396519.png /home/ubuntu/code/efficientnet-detector/data/dataset/images/
+cp /home/ubuntu/data/output/806_1718549170.png /home/ubuntu/code/efficientnet-detector/data/dataset/images/
+cp /home/ubuntu/data/output/35864_230364486.png /home/ubuntu/code/efficientnet-detector/data/dataset/images/
+cp /home/ubuntu/data/output/64439_84747386.png /home/ubuntu/code/efficientnet-detector/data/dataset/images/
+cp /home/ubuntu/data/output/51697_1361957686.png /home/ubuntu/code/efficientnet-detector/data/dataset/images/
+cp /home/ubuntu/data/output/59806_705873233.png /home/ubuntu/code/efficientnet-detector/data/dataset/images/
+cp /home/ubuntu/data/output/57438_33964617.png /home/ubuntu/code/efficientnet-detector/data/dataset/images/
+cp /home/ubuntu/data/output/25_1442180348.png /home/ubuntu/code/efficientnet-detector/data/dataset/images/
+cp /home/ubuntu/data/output/16137_2003359401.png /home/ubuntu/code/efficientnet-detector/data/dataset/images/
+cp /home/ubuntu/data/output/21928_769477628.png /home/ubuntu/code/efficientnet-detector/data/dataset/images/
+cp /home/ubuntu/data/output/45441_1235507527.png /home/ubuntu/code/efficientnet-detector/data/dataset/images/
+cp /home/ubuntu/data/output/23266_729348158.png /home/ubuntu/code/efficientnet-detector/data/dataset/images/
+cp /home/ubuntu/data/output/5235_2141301728.png /home/ubuntu/code/efficientnet-detector/data/dataset/images/
+cp /home/ubuntu/data/output/14292_483720215.png /home/ubuntu/code/efficientnet-detector/data/dataset/images/
