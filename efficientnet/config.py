@@ -12,7 +12,7 @@ import torchvision.transforms as T
 class Config:
     """Package configurations."""
 
-    data_directory: Path = Path(os.getcwd()).parent / "data"
+    data_directory: Path = Path("/home/ubuntu/code/efficientnet-detector/data")
     dataset_directory: Path = data_directory / "dataset"
     image_directory: Path = Path("/home/ubuntu/data/output")
     annotation_directory: Path = dataset_directory / "annotations"
@@ -30,5 +30,5 @@ class Config:
     max_epochs: int = 100
     gpus: int = 1
     learning_rate: float = 0.001
-    batch_size: int = 16
-    n_workers: int = 4
+    batch_size: int = 2
+    n_workers: int = 30
