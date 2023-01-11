@@ -2,15 +2,17 @@ fire
 
 [dev]
 black
-imageio
-imageio-ffmpeg
 isort
 jupyter
-pandas
 pydocstyle
-pyfarmhash
 pylint
 pytest
 pytest-cov
-pytorch-lightning
+pandas
+pyfarmhash
+imageio
+imageio-ffmpeg
 torchmetrics
+pytorch-lightning
+dvc
+dvc-s3

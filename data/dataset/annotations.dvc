@@ -1,0 +1,5 @@
+outs:
+- md5: bed3bccab3dd9996f36b4abd998afc75.dir
+  size: 148661
+  nfiles: 2000
+  path: annotations

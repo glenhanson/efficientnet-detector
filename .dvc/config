@@ -1,0 +1,5 @@
+[core]
+    remote = ghanson
+    autostage = true
+['remote "ghanson"']
+    url = s3://ghanson/data
