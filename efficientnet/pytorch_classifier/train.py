@@ -7,10 +7,10 @@ import torch
 from pytorch_lightning.callbacks import EarlyStopping, ModelCheckpoint
 from torchmetrics.classification import BinaryF1Score
 
+from ..utils import Holdout
 from .config import Config
 from .dataset import EfficientNetDataset
 from .model import EfficientNet
-from .utils import Holdout
 
 
 class EfficientNetTrainer(pl.LightningModule):

@@ -1,7 +1,7 @@
 import fire
 
-from .model import export_model
-from .train import train_model
+from .pytorch_classifier.model import export_model
+from .pytorch_classifier.train import train_model
 
 
 def main():

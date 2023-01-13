@@ -8,8 +8,8 @@ import numpy as np
 import torch
 from PIL import Image
 
+from ..utils import Holdout, get_holdout
 from .config import Config
-from .utils import Holdout, get_holdout
 
 
 def get_sample_dicts(holdout: Optional[Holdout] = None) -> list[dict[str, Any]]:
